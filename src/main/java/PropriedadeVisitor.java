@@ -1,4 +1,9 @@
 public class PropriedadeVisitor implements Visitor{
+
+    public String exibir(Propriedade propriedade) {
+        return propriedade.aceitar(this);
+    }
+
     @Override
     public String exibirApartamento(Apartamento apartamento) {
         return "Apartamento{" +
